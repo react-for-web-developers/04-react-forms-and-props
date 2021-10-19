@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-import AddNewItem from './Mods/AddNewItem';
-import ItemList from './Mods/ItemList';
 
 function App() {
   const [newItem, setNewItem] = useState("");
