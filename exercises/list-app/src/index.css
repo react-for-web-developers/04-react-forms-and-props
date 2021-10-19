@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	text-align: center;
+}
+
+.input__form {
+	display: flex;
+	margin-top: 50px;
+	align-items: center;
+	justify-content: center;
+}
+input {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid lightgrey;
+	margin: 10px;
+	outline: none;
+	width: 60vw;
+}
+.items {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+	width: 100vw;
+}
+
+.btn {
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.btn-done {
+	/* margin: 10px; */
+	margin-right: 5px;
+}
+.btn-unmark {
+	margin: 10px;
+	margin-right: 5px;
+}
+.btn-remove {
+	margin: 10px;
+	margin-right: 5px;
+}
+
+.item-container {
+	display: flex;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-weight: bold;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
