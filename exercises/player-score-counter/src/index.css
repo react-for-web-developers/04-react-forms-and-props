@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+  --primary: hsl(185, 96%, 40%);
+  --white: hsl(255, 100%, 100%);
+  --black: hsl(185, 96%, 5%);
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  width: 80%;
+  color: var(--black);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+.players, .scores {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.player {
+  border: 1px solid var(--primary);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.btn {
+  border: 1px solid var(--primary);
+  background-color: var(--white);
+  color: var(--primary);
+  padding: 5px 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.btn-left {
+  border-radius: 5px 0 0 5px;
+}
+
+.btn-right {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+
+.score-btn {
+  text-align: center;
+}
+
+.score-btn .btn {
+  color: var(--white);
+  background-color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.scores {
+  width: 80%;
+  margin: 1em auto;
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.score span:first-child,
+.players div:nth-child(2) p  {
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 48px;
+  margin: 5px;
+  padding: 0;
+}
