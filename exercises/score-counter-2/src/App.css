@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.app {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.btn {
+	margin: 4px;
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	background-color: #337ab7;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.btn-increment {
+	background-color: #5cb85c;
+	color: #ffffff;
+}
+.btn-decrement {
+	background-color: #d9534f;
+	color: #ffffff;
+}
+
+.score__container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.player__score {
+	margin-right: 30px;
+}
+
+.final__score {
+	display: flex;
+	margin-top: 40px;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.scores {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.scores__player {
+	margin: 20px;
+	justify-content: space-between;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	justify-content: center;
+	width: 50%;
+}
