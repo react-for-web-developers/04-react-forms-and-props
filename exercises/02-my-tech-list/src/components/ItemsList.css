@@ -1,0 +1,55 @@
+.list-wrapper,
+form {
+  background-color: #a48fd1;
+  max-width: 33vw;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 2em;
+}
+
+ul {
+  max-width: 100%;
+  padding: 0;
+}
+
+li,
+input,
+.title {
+  color: #2d2341;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: start;
+  margin: 8px 0;
+  list-style: none;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+.title h2 {
+  text-align: center;
+  color: #7a47e4;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
+input {
+  color: #a48fd1;
+  font-size: 22px;
+  width: 70%;
+}
+button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  border-radius: 8px;
+  padding: 16px 32px;
+  background: #7a47e4;
+  margin-left: 1em;
+  border: none;
+}
