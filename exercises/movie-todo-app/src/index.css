@@ -31,3 +31,7 @@ li::marker {
 .done {
   text-decoration: line-through;
 }
+
+.extra-btns button {
+  margin: 1em 1em 1em 0;
+}

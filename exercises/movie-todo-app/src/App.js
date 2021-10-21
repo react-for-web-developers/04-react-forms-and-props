@@ -1,24 +1,12 @@
 import { useState } from 'react';
+import ExtraButtons from './components/ExtraButtons';
+import MovieForm from './components/MovieForm';
+import MovieList from './components/MovieList';
 
 function App() {
   const [movies, setMovies] = useState([]);
-  const [newMovie, setNewMovie] = useState('');
-
-  const updateAddMovie = (e) => {
-    setNewMovie(e.target.value);
-  };
-
+  
   const addMovie = (newMovie) => setMovies([...movies, newMovie]);
-
-  const formSubmitted = (e) => {
-    e.preventDefault();
-    addMovie({
-      id: Date.now(),
-      title: newMovie,
-      is_done: false,
-    });
-    setNewMovie('');
-  };
 
   const markAsDone = (id) => {
     const updatedMovies = movies.map((movie) => {
@@ -57,24 +45,16 @@ function App() {
     <div>
       <h1>🎥 Movie Todo App 🎥</h1>
       
-      <form onSubmit={formSubmitted}>
-        <label htmlFor="addMovie">Add a movie to watch later</label>
-        <input onChange={updateAddMovie} id="addMovie" value={newMovie} />
-        <button type="submit">Add Movie</button>
-      </form>
-
-      <button onClick={markAllDone}>Mark all done</button>
-      <button onClick={removeDoneMovies}>Remove done</button>
-
-      <ul>
-        {movies.map((movie) => (
-          <li key={movie.id} className={movie.is_done ? 'done' : ''}>
-            {movie.title}
-            <button onClick={() => markAsDone(movie.id)}>Mark as done</button>
-            <button onClick={() => removeMovie(movie.id)}>Remove movie</button>
-          </li>
-        ))}
-      </ul>
+      <MovieForm addMovie={addMovie} />
+      <ExtraButtons 
+        markAllDone={markAllDone}
+        removeDoneMovies={removeDoneMovies}
+      />
+      <MovieList 
+        movies={movies}
+        markAsDone={markAsDone}
+        removeMovie={removeMovie}
+      />
     </div>
   );
 }
